@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graduation Card System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h1>Welcome to the Graduation Ceramony</h1>
+
+  <form action="Q2.html" method="get" autocomplete="on">
+
+    <div class="line">
+      <label class="lbl">Choose your favorite Color:</label>
+      <input class="color" type="color" name="cardColor">
+      <span class="hint">(Hexadecimal code such as #ADD8E6)</span>
+    </div>
+
+    <div class="line">
+      <label class="lbl">Celebration Date:</label>
+      <input class="long" type="date" name="celebrationDate">
+      <span class="hint">(date input)</span>
+    </div>
+
+    <div class="line">
+      <label class="lbl">Accurate Graduation Date! (LocalTime):</label>
+      <input class="xlong" type="datetime-local" name="graduationDate">
+      <span class="hint">(datetime-local input)</span>
+    </div>
+
+    <div class="line">
+      <label class="lbl">Your Summer Vacation Starts on:</label>
+      <input class="long" type="month" name="vacationMonth">
+      <span class="hint">(yyyy-mm)</span>
+    </div>
+
+    <div class="SF">Accepting the invitation:</div>
+
+    <ul>
+      <li>
+        <label>Your Email :</label>
+        <input class="email" type="email" placeholder="user@uod.edu.sa" required>
+      </li>
+      <li>
+        <label>Your mobile No :</label>
+        <input class="email" type="tel"
+               placeholder="+(966) ## ### ####"
+               pattern="^\+966[0-9]{8,9}$"
+               required>
+      </li>
+    </ul>
+
+    <div class="row2">
+      <input class="hall" type="text" placeholder="Select a hall" list="halls">
+      <datalist id="halls">
+        <option value="Main Hall">
+        <option value="Green Hall">
+        <option value="Official Hall">
+      </datalist>
+    </div>
+
+    <div class="buttons">
+      <input type="submit" value="submit">
+      <input type="reset" value="clear">
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
