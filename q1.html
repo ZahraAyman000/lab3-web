@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Four by Four Chess Table</title>
 
+<style>
+  body{
+    font-family: "Times New Roman", Times, serif;
+    background:#fff;
+    padding:40px;
+  }
+
+  h1{
+    font-size:48px;
+    margin-bottom:20px;
+  }
+
+ 
+  .outer{
+    display:inline-block;
+    padding:10px;
+    background:#e6e6e6;
+    border:4px solid #666;
+    box-shadow:8px 8px 0 #333;
+  }
+
+  table{
+    border-collapse:separate;
+    border-spacing:4px;
+    background:#e6e6e6;
+  }
+
+ 
+  td{
+    height:44px;         
+    padding:6px 10px;
+    font-size:21px;
+    background:#f9f9f9;
+    border:2px solid #9a9a9a;
+    text-align:left;
+    vertical-align:middle;
+
+    box-shadow:
+      inset 1px 1px 0 #ffffff,
+      inset -1px -1px 0 #b5b5b5;
+  }
+
+
+  .w3{ width:320px; }   
+  .w2{ width:170px; }   
+  .w1{ width:180px; }   
+</style>
+</head>
+
+<body>
+
+<h1>Four by Four Chess Table</h1>
+
+<div class="outer">
+<table>
+
+  
+  <tr>
+    <td colspan="2" class="w3">*</td>
+    <td class="w2">13</td>
+    <td class="w2">14</td>
+  </tr>
+
+
+  <tr>
+    <td class="w1">21</td>
+    <td class="w1">22</td>
+    <td colspan="2" class="w3">*</td>
+  </tr>
+
+
+  <tr>
+    <td rowspan="2" class="w1">*</td>
+    <td colspan="2" class="w3">*</td>
+    <td class="w2">34</td>
+  </tr>
+
+
+  <tr>
+    <td class="w1">42</td>
+    <td class="w1">43</td>
+    <td class="w2">44</td>
+  </tr>
+
+</table>
+</div>
+
+</body>
+</html>
